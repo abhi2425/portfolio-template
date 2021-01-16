@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="./css/darkskyapp.css">
+    <title>Weather App|Abhinav Jha</title>
+</head>
+<script src="./js/loading.js"></script>
+
+<body onload="loading()">
+    <div id="loader">
+        <img src="./img/loading1.gif" alt="Loading..." id="loader__image">
+    </div>
+    <div id="container" class="container" style="display:none;">
+        <header class="header">
+            <div class="logo__style">Logo</div>
+            <div class="header__heading">
+                <div class="name__style style2">DarkSky App</div>
+            </div>
+            {{>navigation}}
+        </header>
+        <section class="pictures">
+            <div class="pictures__container">
+                <img src="./img/weatherapp.jpg" alt="WeatherApp" class="pictures__container--style">
+            </div>
+            <a href="https://node-dark-sky-app.herokuapp.com" class="pictures__link">Visit DarkSky &rightarrow;</a>
+        </section>
+        <article class="aboutApp">
+            <h1 class="aboutApp__heading"># About DarkSky</h1>
+            <p class="aboutApp__text">DarkSky App is basic weather app that finds the weather of a particular location
+                mentioned in the search bar.It uses basic api under the hood to find weather details of that place such
+                as latitude,longitude with temperature, wind speed,humidity and locates the location on the map. </p>
+        </article>
+        <article class="technologies">
+            <h1 class="aboutApp__heading"># Technical Sheet &RightArrow;</h1>
+            <h3 class="aboutApp__subHeading">&#10095; BackEnd for maintaining server</h3>
+            <p class="aboutApp__text"><img src="./img/nodeIcon.png" alt="" class="technologies__icons">NodeJs along with
+                ExpressJs</p>
+            <h3 class="aboutApp__subHeading">&#10095; FrontEnd for UI</h3>
+            <p class="aboutApp__text"><img src="./img/html5icon.png" alt="" class="technologies__icons">Html5
+                and<img src="./img/css3icon.png" alt="" class="technologies__icons"> CSS3 with <img src="./img/sass.png"
+                    alt="" class="technologies__icons">SCSS and<img src="./img/jsIcon.png" alt=""
+                    class="technologies__icons">JS</p>
+            <h3 class="aboutApp__subHeading">&#10095; API's Used </h3>
+            <li class="aboutApp__text">Dark Sky Api, Mapbox Api and Fetch Api for handling request and sending data to
+                server</li>
+            <h3 class="aboutApp__subHeading">&#10095; Libraries Used</h3>
+            <li class="aboutApp__text">LeafLetJs- For locating location on map.</li>
+
+
+        </article>
+        {{>footer}}
+    </div>
+</body>
+
+</html>

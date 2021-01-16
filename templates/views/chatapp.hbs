@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="css/chatapp.css">
+    <title>Chat App|Abhinav Jha</title>
+</head>
+<script src="./js/loading.js"></script>
+
+<body onload="loading()">
+    <div id="loader">
+        <img src="./img/loading1.gif" alt="Loading..." id="loader__image">
+    </div>
+    <div id="container" class="container" style="display:none;">
+        <header class="header">
+            <div class="logo__style">Logo</div>
+            <div class="header__heading">
+                <div class="name__style style2">Chat App</div>
+            </div>
+
+            {{>navigation}}
+        </header>
+        <section class="pictures">
+            <div class="pictures__container">
+                <img src="./img/chatapp.jpg" alt="ExpenseManager" class="pictures__container--style">
+            </div>
+            <a href="https://node-abhi-chat-app.herokuapp.com" class="pictures__link">Visit Chat App &rightarrow; </a>
+        </section>
+        <article class="aboutApp">
+            <h1 class="aboutApp__heading"># About Chat App</h1>
+            <p class="aboutApp__text">Chat App is a basic group chat web application.Till now it has very less feature
+                which includes that you can create a group and ask your friends to join that where you can send messages
+                to
+                each other in that group and send your location to your friends on google map.This web app is still
+                under development and soon I will add some new features in it. </p>
+        </article>
+        <article class="technologies">
+            <h1 class="aboutApp__heading"># Technical Sheet &RightArrow;</h1>
+            <h3 class="aboutApp__subHeading">&#10095; BackEnd for maintaining server</h3>
+            <p class="aboutApp__text"><img src="./img/nodeIcon.png" alt="" class="technologies__icons">NodeJs along with
+                ExpressJs</p>
+            <h3 class="aboutApp__subHeading">&#10095; FrontEnd for UI</h3>
+            <p class="aboutApp__text"><img src="./img/html5icon.png" alt="" class="technologies__icons">Html5
+                and<img src="./img/css3icon.png" alt="" class="technologies__icons"> CSS3 with <img src="./img/sass.png"
+                    alt="" class="technologies__icons">SCSS and<img src="./img/jsIcon.png" alt=""
+                    class="technologies__icons">JS</p>
+            <h3 class="aboutApp__subHeading">&#10095; API's Used </h3>
+            <li class="aboutApp__text"> Socket.Io &rightarrow; for creating connection between the users and send data
+                from one to another</li>
+
+        </article>
+        {{>footer}}
+
+    </div>
+
+</body>
+
+</html>

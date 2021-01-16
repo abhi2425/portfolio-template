@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, #222, #555);
+}
+
+.error {
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+    color: whitesmoke;
+}

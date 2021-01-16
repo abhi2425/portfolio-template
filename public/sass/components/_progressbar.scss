@@ -1,0 +1,181 @@
+.skillContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    & .skillContainer__card {
+        position: relative;
+        width: 25rem;
+        background-image: linear-gradient(0deg, #212121, #222, #181717);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+        border-radius: 3rem;
+        text-align: center;
+        overflow: hidden;
+        transition: .5s;
+        @include respond(phone) {
+            margin: 3rem;
+            width: 30rem;
+            height: 35rem;
+        }
+        &:hover {
+            transform: translateY(-1rem);
+            box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.815);
+            color: #fff;
+            & .percent .number h2 {
+                color: white;
+                font-size: 6rem;
+                & span {
+                    color: #777;
+                }
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(95, 95, 95, 0.658);
+            pointer-events: none;
+            z-index: 1;
+        }
+        & svg {
+            position: relative;
+            width: 15rem;
+            height: 15rem;
+            z-index: 500;
+            @include respond(tab-land) {
+                width: 17rem;
+                height: 17rem;
+            }
+            @include respond(tab-port) {
+                width: 19rem;
+                height: 19rem;
+            }
+            @include respond(phone) {
+                width: 25rem;
+                height: 25rem;
+            }
+            & circle {
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #191919;
+                stroke-linecap: round;
+                stroke-width: 10;
+                transform: translate(.5rem, .5rem);
+                @include respond(phone) {
+                    transform: translate(.8rem, .8rem);
+                }
+                &:nth-child(2) {
+                    stroke-dasharray: 440;
+                    stroke-dashoffset: 220;
+                }
+            }
+        }
+    }
+    .percent {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        box-shadow: inset 0 0 5rem #000;
+        background-color: #222;
+        z-index: 500;
+        @include respond(tab-land) {
+            width: 16rem;
+            height: 16rem;
+        }
+        @include respond(tab-port) {
+            width: 19rem;
+            height: 19rem;
+        }
+        @include respond(phone) {
+            width: 25rem;
+            height: 25rem;
+        }
+        & .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            & h2 {
+                color: rgb(146, 140, 140);
+                font-weight: 700;
+                font-size: 4rem;
+                transition: .6s;
+            }
+        }
+    }
+    .text {
+        position: relative;
+        color: rgb(233, 232, 232);
+        font-weight: 700;
+        font-size: 2.5rem;
+        font-style: italic;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        transition: .5s;
+        text-align: center;
+        @include respond(tab-land) {
+            font-size: 2.2rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.frontend {
+    &:nth-child(1) svg circle:nth-child(2) {
+        stroke: #00ff43;
+        stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    }
+    &:nth-child(2) svg circle:nth-child(2) {
+        stroke: #00a1ff;
+        stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    }
+    &:nth-child(3) svg circle:nth-child(2) {
+        stroke: #ff04f7;
+        stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    }
+}
+
+.backend {
+    &:nth-child(1) svg circle:nth-child(2) {
+        stroke: crimson;
+        stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    }
+    &:nth-child(2) svg circle:nth-child(2) {
+        stroke: #9A32CD;
+        stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    }
+    &:nth-child(3) svg circle:nth-child(2) {
+        stroke: #00E5EE;
+        stroke-dashoffset: calc(440 - (440 * 40) / 100);
+    }
+}
+
+.databases {
+    &:nth-child(1) svg circle:nth-child(2) {
+        stroke: #00FA9A;
+        stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    }
+    &:nth-child(2) svg circle:nth-child(2) {
+        stroke: #EE4000;
+        stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    }
+}

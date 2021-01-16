@@ -1,0 +1,48 @@
+.contactForm {
+    padding: 2rem;
+    &__contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 66.5vw;
+        @include respond(tab-land) {
+            width: 76vw;
+        }
+        @include respond(phone) {
+            width: 66vw;
+        }
+        &--label {
+            font-size: 2.4rem;
+            color: whitesmoke;
+            font-style: italic;
+            margin: .5rem;
+            font-family: georgia;
+        }
+        &--input {
+            font-size: 1.8rem;
+            color: black;
+            padding: 1rem 3rem;
+            font-style: italic;
+            font-family: georgia;
+            opacity: .7;
+            width: 30rem;
+            border-radius: 5rem;
+            &:focus {
+                width: 96%;
+                transition: width .9s ease-in-out;
+            }
+        }
+        &--message {
+            resize: none;
+            width: 96%;
+            max-height: 20rem;
+            padding: 1rem 3rem;
+            font-size: 1.8rem;
+            font-family: georgia;
+            color: black;
+            text-align: left;
+            opacity: .7;
+            border-radius: 5rem;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.gridImageCell {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: var(--shadow-light);
+    &--1 {
+        background-image: linear-gradient(to right top, #00f7ff77, #1b1a1aad), url(../../img/quotes/little_hope.jpg);
+    }
+    &--2 {
+        background-image: linear-gradient(to right top, #ec212169, #0a0909ea), url(../../img/quotes/speed_of_light.jpg);
+    }
+    &--3 {
+        background-image: linear-gradient(to right top, #161613bd, #ff634783), url(../../img/quotes/life_enjoy.jpg);
+    }
+    &--4 {
+        background-image: linear-gradient(to right top, #0442579f, #161515a2), url(../../img/quotes/choose.jpg);
+    }
+    &--6 {
+        background-image: linear-gradient(to right top, #404242b9, #533520c2), url(../../img/quotes/child_and_adult.jpg);
+    }
+    &--7 {
+        background-image: linear-gradient(to right top, #1b1b1b83, #666565ad), url(../../img/quotes/fake_reality.jpg);
+    }
+    &--8 {
+        background-image: linear-gradient(to right top, #a7a1a1ab, #7c7979a6), url(../../img/quotes/broken_mirror.jpg);
+    }
+    &--9 {
+        background-image: linear-gradient(to right top, #0a0a0a8e, #fcf6f6a2), url(../../img/quotes/winning_feel.jpg);
+    }
+    &--10 {
+        background-image: linear-gradient(to right top, #1a1919be, #4e4229c7), url(../../img/quotes/resources.jpg);
+    }
+    &--11 {
+        background-image: linear-gradient(to right top, rgba(231, 239, 240, 0.557), #1a1818a2), url(../../img/quotes/victory_without.jpg);
+    }
+    &--12 {
+        background-image: linear-gradient(to right top, #7c84858e, #0c0708a2), url(../../img/quotes/rumors.jpg);
+    }
+    &--13 {
+        background-image: linear-gradient(to right top, #ffd49b80, #0e0d0d80), url(../../img/quotes/taking_place.jpg);
+    }
+    &--14 {
+        background-image: linear-gradient(to right top, #7a83838e, #0f0f0fa2), url(../../img/quotes/suffering.jpg);
+    }
+    &--15 {
+        background-image: linear-gradient(to right top, #222b12c9, #0a161bce), url(../../img/quotes/success_on_head.jpg);
+    }
+    &--16 {
+        background-image: linear-gradient(to right top, #29272791, #55494f88), url(../../img/quotes/time_to_change.jpg);
+    }
+    &--17 {
+        background-image: linear-gradient(to right top, #282b2b8e, #dfac95a2), url(../../img/quotes/warrior.jpg);
+    }
+    &--18 {
+        background-image: linear-gradient(to right top, #6e9cc78e, #ee9949a1), url(../../img/quotes/truth.jpg);
+    }
+    &--19 {
+        background-image: linear-gradient(to right top, #0808088e, #14bedca2), url(../../img/quotes/brightest_star.jpg);
+    }
+    &--20 {
+        background-image: linear-gradient(to right top, #0808088e, #535253a2), url(../../img/quotes/heart_deceiving.jpg);
+    }
+    &--21 {
+        background-image: linear-gradient(to right top, #133f165e, #d16e2877), url(../../img/quotes/hide_yourself.jpg);
+    }
+    &--22 {
+        background-image: linear-gradient(to right top, #1213138e, #9c9899a2), url(../../img/quotes/hope.jpg);
+    }
+    &--23 {
+        background-image: linear-gradient(to right top, #00f7ffab, #11101086), url(../../img/quotes/fun_in_failure.jpg);
+    }
+    &--24 {
+        background-image: linear-gradient(to right top, #19191af1, #4d4949de), url(../../img/quotes/introvert.jpg);
+    }
+    &--25 {
+        background-image: linear-gradient(to right top, #6d290a79, #9157117a), url(../../img/quotes/art_in_losing.jpg);
+    }
+    &--26 {
+        background-image: linear-gradient(to right top, #9157117a, #fff1f4a2), url(../../img/quotes/enemy_knowing.jpg);
+    }
+    &--27 {
+        background-image: linear-gradient(to right top, #1a1b1b8e, #0c694388), url(../../img/quotes/a_day_will_come.jpg);
+    }
+    &--28 {
+        background-image: linear-gradient(to right top, #1c1f1f8e, #e0dfdfa2), url(../../img/quotes/imagination.jpg);
+    }
+    &--29 {
+        background-image: linear-gradient(to right top, #925d0d7c, #b3a7398a), url(../../img/quotes/experience.jpg);
+    }
+    &--30 {
+        background-image: linear-gradient(to right top, #2225258e, #0b66108c), url(../../img/quotes/brain_as_processor.jpg);
+    }
+    &--31 {
+        background-image: linear-gradient(to right top, #060707ab, #4e3106a8), url(../../img/quotes/lifestyle_promised.jpg);
+    }
+    &--32 {
+        background-image: linear-gradient(to right top, #272e2e8e, #c4a62175), url(../../img/quotes/road_less_taken.jpg);
+    }
+    &--33 {
+        background-image: linear-gradient(to right top, #758686e7, #115c68d8), url(../../img/quotes/world.jpg);
+    }
+    &--34 {
+        background-image: linear-gradient(to right top, #d6d9da75, #fffbfc88), url(../../img/quotes/silence.jpg);
+    }
+    &--35 {
+        background-image: linear-gradient(to right top, #41330694, #2e2b2b6b), url(../../img/quotes/someone_looking.jpg);
+    }
+    &--36 {
+        background-image: linear-gradient(to right top, #0000008e, #cc9f238c), url(../../img/quotes/seeing_is_believing.jpg);
+    }
+    &--37 {
+        background-image: linear-gradient(to right top, #0505058e, #7092b9a2), url(../../img/quotes/mountain_top.jpg);
+    }
+    &--38 {
+        background-image: linear-gradient(to right top, #1e1f1f8e, #09631d83), url(../../img/quotes/past_realisation.jpg);
+    }
+    &--39 {
+        background-image: linear-gradient(to right top, #1416168e, #9998988a), url(../../img/quotes/mistakes.jpg);
+    }
+    &--40 {
+        background-image: linear-gradient(to right top, #0607078e, #947f8371), url(../../img/quotes/time.jpg);
+    }
+    &--41 {
+        background-image: linear-gradient(to right top, #b8b8b873, rgba(245, 245, 220, 0.61)), url(../../img/quotes/optimism.jpg);
+    }
+    &--42 {
+        background-image: linear-gradient(to right top, #1416168e, #c9c3c496), url(../../img/quotes/different.jpg);
+    }
+}

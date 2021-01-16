@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,200..900">
+    <title>HOME|Abhinav Jha</title>
+</head>
+<script src="./js/loading.js"></script>
+
+<body onload="loading()">
+    <div id="loader">
+        <img src="./img/loading1.gif" alt="Loading..." id="loader__image">
+    </div>
+
+    <div id="container" class="container" style="display:none;">
+        <header class="header">
+            <div class="header__logo">
+                <p class="logo__style">Logo</p>
+            </div>
+            <div class="header__name">
+                <p class="name__style">Abhinav Jha 😇</p>
+                <p class="name__style style1">Use Your Brain And Follow Your Heart!</p>
+                <a href="#projects" class="btn btn--white btn--animated">My Projects</a>
+            </div>
+            {{>navigation}}
+        </header>
+        <article class="article">
+            <h1 class="name__style">About Me</h1>
+            <div class="article__content">
+                <div class="article__aboutMe">
+                    <p class="text__style">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos non ex eum blanditiis
+                        esse,
+                        assumenda temporibus tempore, nemo odit dolor, optio labore quam dicta illum quia tenetur harum
+                        quidem.
+                    </p>
+                </div>
+                <div>
+                    <div class="article__image">
+                        <img src="./img/header__home.jpg" alt="My Pic" class="article__image--style">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="projects" id="projects">
+            <h1 class="projects__heading name__style">My Projects</h1>
+            <div class="projects__content">
+                <div class="projects__card">
+                    <div class="projects__image">
+                        <img src="./img/weatherapp.jpg" alt="WeatherApp" class="projects__image--style">
+                    </div>
+                    <h1 class="style1">Dark-Sky</h1>
+                    <a href="/darkskyapp" class="btn btn--animated" id="projects--btn">See Project</a>
+                </div>
+                <div class="projects__card">
+                    <div class="projects__image">
+                        <img src="./img/expensemanager.jpg" alt="WeatherApp" class="projects__image--style">
+                    </div>
+                    <h1 class="style1">Expense-Manager</h1>
+                    <a href="/expensehandler" class="btn btn--animated" id="projects--btn">See Project</a>
+                </div>
+                <div class="projects__card">
+                    <div class="projects__image">
+                        <img src="./img/chatapp.jpg" alt="WeatherApp" class="projects__image--style">
+                    </div>
+                    <h1 class="style1">Chat-App</h1>
+                    <a href="/chatapp" class="btn btn--animated" id="projects--btn">See Project</a>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="contactMe" id="contact">
+            <h1 class="name__style">Contact Me!</h1>
+            <div class="contactMe__details">
+                <img src="./img/email.png" alt="" class="footer__icons--style">
+                <h1 class="text__style"> <b>E-mail-:</b> abhiinvirtuallife@gmail.com</h1>
+            </div>
+            <div class="contactMe__details">
+                <img src="./img/phone.png" alt="" class="footer__icons--style">
+                <h1 class="text__style"><b>Ph-No. -:</b> 8882257194</h1>
+            </div>
+            <div class="contactMe__container">
+                <div class="contactMe__container--form">
+                    <form action="/" method="POST" class="contactForm">
+                        <div class="contactForm__contents">
+                            <label for="name" class="contactForm__contents--label">Name</label>
+                            <input type="text" class="contactForm__contents--input" id="name" name="name" required
+                                pattern="[a-zA-Z\s]*" placeholder="Your Name">
+                        </div>
+                        <div class="contactForm__contents">
+                            <label for="email" class="contactForm__contents--label">Email
+                            </label>
+                            <input type="email" class="contactForm__contents--input" id="email" name="email" required
+                                placeholder="Email">
+                        </div>
+                        <div class="contactForm__contents">
+                            <label for="subject" class="contactForm__contents--label">Subject
+                            </label>
+                            <input type="text" class="contactForm__contents--input" id="subject" name="subject" required
+                                placeholder="Subject">
+                        </div>
+
+                        <div class="contactForm__contents">
+                            <label for="message" class="contactForm__contents--label">Message
+                            </label>
+                            <textarea type="text" name="message" class="contactForm__contents--message" id="message"
+                                cols="30" rows="10" required></textarea>
+                        </div>
+                        <input type="submit" value="Send" id="projects--btn" class="btn btn--white btn--animated">
+                        <h1 class="logo__style">{{data}} </h1>
+                    </form>
+                </div>
+                <script>
+                    document.querySelector(".contactForm").reset()
+                </script>
+            </div>
+        </section>
+        {{>footer}}
+    </div>
+
+</html>

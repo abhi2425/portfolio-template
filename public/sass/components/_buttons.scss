@@ -1,0 +1,71 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        padding: 1.5rem 4rem;
+        margin-top: 2.0rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 3rem;
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+        transition: .6s;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(#000, .2);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(#000, .2);
+    }
+    &--white {
+        background-color: #fff;
+        color: #777;
+        &::after {
+            background-color: #fff;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &--animated {
+        animation: bottom-to-top 2s ease-out .3s;
+        animation-fill-mode: backwards;
+    }
+}
+
+#projects--btn {
+    color: #121212d3;
+    background-color: #d6d6d6;
+    padding: 1rem 2rem;
+    font-size: 2.2rem;
+    font-style: italic;
+    transition: .6s;
+    &:hover {
+        background-color: #8d8d8d;
+        color: white;
+    }
+}
