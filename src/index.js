@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-const home = require('./routers/home')
+const router = require('./routers/router')
 const bodyParser = require('body-parser')
 
 const app = express()
@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialPath)
-app.use(home)
+app.use(router)
 
 app.listen(port, () => {
  console.log('Server Up At-:', port)

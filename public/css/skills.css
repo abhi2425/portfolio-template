@@ -247,7 +247,6 @@ body {
     border-radius: 40%; }
 
 .container {
-  display: none;
   grid-template-rows: min-content min-content repeat(3, min-content) min-content min-content min-content;
   grid-template-columns: 1vw repeat(10, minmax(4rem, 1fr)) 1vw;
   grid-gap: 3rem;

@@ -1,22 +1,4 @@
-#loader {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(21, 31, 41);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__image {
-        width: 40vw;
-        border-radius: 40%;
-    }
-}
-
-#container {
-    display: none;
-}
-
 .container {
-    display: none;
     grid-template-rows: 100vh min-content min-content min-content min-content;
     grid-template-columns: min-content repeat(10, minmax(4rem, 1fr)) min-content;
 }
