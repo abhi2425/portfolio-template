@@ -1,68 +1,91 @@
 :root {
   --shadow-dark: 0 8.5rem 12rem rgba(0, 0, 0, 0.767);
-  --shadow-light: 0 4.25rem 6rem rgba(0, 0, 0, 0.493); }
+  --shadow-light: 0 4.25rem 6rem rgba(0, 0, 0, 0.493);
+}
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.5%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 37.3%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 37.3%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
-  font-family: "open sans"sans-serif;
+  font-family: "open sans" sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin: 0rem; }
-  @media only screen and (max-width: 75em) {
-    body {
-      font-weight: 400;
-      line-height: 1.3; } }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      font-weight: 300;
-      line-height: 1.2;
-      width: 100vw; } }
-  @media only screen and (max-width: 37.5em) {
-    body {
-      font-weight: 200;
-      line-height: 1.1; } }
+  margin: 0rem;
+}
+@media only screen and (max-width: 75em) {
+  body {
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    font-weight: 300;
+    line-height: 1.2;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    font-weight: 200;
+    line-height: 1.1;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 1.5rem;
-  background-image: linear-gradient(to left bottom, black, grey); }
+  background-image: linear-gradient(to left bottom, black, grey);
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 0.6rem black;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: beige;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+}
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(to bottom left, #8427a0, #4161ca); }
+  background-image: linear-gradient(to bottom left, #8427a0, #4161ca);
+}
